@@ -24,7 +24,7 @@
 \namesection{Max Peterson}
 \vspace{2pt}
 
-\location{\href{mailto:peterson.ma@northeastern.edu}{peterson.ma@northeastern.edu} | 415.342.4362}
+\location{\href{mailto:peterson.ma@northeastern.edu}{peterson.ma@northeastern.edu} | XXX.XXX.XXXX}
 \location{\href{https://maxpeterson.cc}{maxpeterson.cc} | \href{https://linkedin.com/in/max-peterson}{linkedin.com/in/max-peterson}}
 \sectionsep
 
@@ -38,7 +38,7 @@
 \location{Expected May 2023 | 3.92/4 GPA | Boston, MA}
 \vspace{3pt}
 \textbf{Coursework:} Algorithms and Data, Advanced Algorithms, Computer Systems, Systems Security, Networks and Distributed Systems, Foundations of Cybersecurity, Foundations of Data Science \\
-\textbf{Study Abroad:} Visited China and Taiwan during 2019 summer term. Attended lectures at Tsinghua University and National Taiwan University. \\
+\textbf{Study Abroad:} Visited China and Taiwan during the 2019 summer term. Attended lectures at Tsinghua University and National Taiwan University. \\
 \textbf{Awards:} Honors Program, Honors Scholarship (top 10\% of incoming class)
 \sectionsep
 
@@ -51,10 +51,11 @@
 \descript{| Software Engineering Intern}
 \location{May to August 2022 | Remote from Sausalito, CA}
 \begin{tightemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-\item Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-\item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-\item Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+\item Redesigned user notification backend for Cloudflare Workers, increasing user capacity by 11x
+\item Replaced existing backend that couldn't scale to meet rapid growth in customer adoption
+\item Restructured monolithic Go application into 3 Go microservices using Kafka, Kubernetes, and Helm
+\item Implemented z-score-based usage notifications using Go in response to customer feedback
+\item Prototyped z-score notification metric using Python, NumPy, and historical data from Clickhouse
 \end{tightemize}
 \sectionsep
 
@@ -62,10 +63,9 @@
 \descript{| Software Engineering Co-op}
 \location{January to April 2022 | Boston, MA}
 \begin{tightemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-\item Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-\item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-\item Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+\item Built a 3 step, multi-user workflow for ML image score evaluation using Vue, Django, and Celery
+\item Integrated email notifications into user workflow framework to alert users upon task assignment
+\item Extended user workflow framework configuration to support optional validation of input images
 \end{tightemize}
 \sectionsep
 
@@ -74,7 +74,6 @@
 \location{May to August 2021 | Remote from Sausalito, CA}
 \begin{tightemize}
 \item Extended E2E communication stack to support channel-based messaging using RxJS and socket.io
-\item Collaborated with executive leadership on design and product decisions related to messaging
 \item Led rollout of strict TypeScript compiler settings for core web app, fixing over 1000 errors 
 \item Increased core API test coverage by 20\% and cut integration test time in half using Jest 
 \end{tightemize}
@@ -85,7 +84,7 @@
 \location{January to April 2021 | Remote from Sausalito, CA}
 \begin{tightemize}
 \item Launched customer-facing dashboard application using React, Spring, and SingleStore
-\item Added 4 new data sources to ETL pipelines using AWS Lambda and Redshift
+\item Added 4 new upstream data sources to ETL pipelines using AWS Lambda and Redshift
 \item Led team of 5 co-ops in documenting microservices using GitLab Wiki and Mermaid.js
 \item Presented tech talk on frontend state management tools for React to 20 full-time engineers
 \end{tightemize}
@@ -98,11 +97,11 @@
 % The [t] means align the minipages using the top baseline, which we need
 \begin{minipage}[t]{0.5\textwidth}
 \section{Projects}
-\subsection{ArchMap.cc}
-A map-based web app for finding notable local architecture. Scraping infrastructure built with Go, Google Maps APIs, and AWS Lambda and SQS.
+\subsection{\href{https://github.com/maxwellpeterson/kafka-worker}{kafka-worker}}
+Kafka 0.8.0 broker built on Cloudflare Workers and Durable Objects and written in TypeScript. Includes a shim written in Go for TCP to WebSocket conversion that makes it compatible with existing Kafka clients.
 \sectionsep
-\subsection{Course Projects}
-A Raft-based key-value store written in Go, a FUSE-based filesystem and multithread-optimized memory allocator written in C, and a tiny programming language written in Haskell.
+\subsection{\href{https://archmap.cc}{archmap.cc}}
+Map-based web app for finding notable local architecture. Scraping pipeline built with Go, Google Maps APIs, and AWS Lambda and SQS. UI built with TypeScript, React, Mapbox, and Cloudflare Workers.
 \end{minipage}\hfill\begin{minipage}[t]{0.45\textwidth}
 \section{Skills}
 \subsection{Languages and Frameworks}
@@ -111,8 +110,8 @@ React \textbullet{} Vue \textbullet{} Spring \textbullet{} Django \textbullet{} 
 \sectionsep
 \subsection{Tools and Infrastructure}
 Git \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} Helm \textbullet{} Kafka \\
-Postgres \textbullet{} Clickhouse \textbullet{} Ceph \textbullet{} Vault \textbullet{} mTLS \\
-Prometheus \textbullet{} Grafana \textbullet{} OpenTelemetry \\
+Postgres \textbullet{} Clickhouse \textbullet{} Vault \textbullet{} Grafana \\
+Prometheus \textbullet{} Jaeger \textbullet{} OpenTelemetry \\
 AWS Lambda \textbullet{} SQS \textbullet{} S3 \textbullet{} Redshift \textbullet{} CDK \\
 Cloudflare Workers \textbullet{} Google Maps Platform
 \end{minipage}
